@@ -132,10 +132,12 @@ public class ListaEncadeada<T> implements Lista<T> {
 
         No<T> atual = inicio;
 
+        //enquanto existir um nó para visitar, ele percorre a lista
         while (atual != null) {
 
             resultado += atual.valor;
 
+            //para evitar virgula sobrando no final
             if (atual.proximo != null) {
                 resultado += ", ";
             }
