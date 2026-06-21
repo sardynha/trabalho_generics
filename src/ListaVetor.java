@@ -110,4 +110,24 @@ private void aumentarCapacidade() {
     //aponta pro maior
     itens = novoVetor;
 }
+
+//esse aqui é para imprimir no main sem varios for :)
+@Override
+public String toString() {
+
+    String resultado = "[";
+
+    for (int i = 0; i < tamanho; i++) {
+
+        resultado += itens[i];
+
+        if (i < tamanho - 1) {
+            resultado += ", ";
+        }
+    }
+
+    resultado += "]";
+
+    return resultado;
+}
 }
